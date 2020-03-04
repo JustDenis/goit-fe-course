@@ -3,6 +3,18 @@
     padding: 0;
 }
 
+header{
+    padding: 75px 0 100px 0;
+}
+
+section{
+    padding-bottom: 70px;
+}
+
+.font-zero{
+    font-size: 0;
+}
+
 .container{
     margin: 0 auto;
     width: 900px;
@@ -10,20 +22,24 @@
 
 .nav-items{
     text-align: center;
-    margin: 75px 0 100px 0;
 }
 
 .nav-item{
     display: inline-block;
     list-style: none;
+    margin-right: 120px;
+}
+
+.nav-item:last-child{
+    margin-right: 0;
 }
 
 .nav-item a{
+    display: block;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
     color: #626262;
-    margin: 0 60px;
 }
 
 .nav-item a:hover{
@@ -36,44 +52,47 @@
     margin-bottom: 130px;
 }
 
-.right{
-    margin-left: 55px;
+.post:nth-child(odd){
+    margin-right: 55px;
 }
 
 .post-img{
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .post-category{
     font-size: 14px;
     color: #b4ad9e;
     text-transform: uppercase;
-    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .post-title{
     font-size: 30px;
     color: #626262;
-    margin-top: 30px;
+    margin-bottom: 45px;
 }
 
 .post-description{
     font-size: 14px;
     color: #626262;
-    margin-top: 45px;
-}
-
-.button-load{
-    text-align: center;
 }
 
 .button{
+    display: block;
+    margin: 0 auto;
     font-size: 20px;
     color: #626262;
     padding: 20px 35px;
     background: transparent;
     border: 1px solid #626262;
-    margin: -70px 0 70px 0;
+    
+}
+
+.button:hover{
+    color: #25b4f5;
+    border: 1px solid #25b4f5;
     cursor: pointer;
 }
 
