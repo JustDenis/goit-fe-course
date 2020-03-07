@@ -17,20 +17,27 @@ header{
 main{
     font-family: 'Roboto', sans-serif;
 }
+/*Menu*/
+.nav{
+    line-height: 36.67px;
+}
+
 
 .logo{
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     font-weight: 300;
+    color: #555252;
+    text-decoration: none;
 }
 
-.logo::first-letter{
+.logo span{
     color: #1abc9c;
     font-weight: 700;
 }
 
 .nav-items{
-    vertical-align: middle;
+    float: right;
 }
 
 .nav-items li{
@@ -38,43 +45,54 @@ main{
 }
 
 .nav-item{
-    float: right;
+    float: left;
     font-size: 14px;
     font-weight: 700;
     margin-right: 35px;
+    text-transform: uppercase;
 }
 
-.nav-item:first-child{
+.nav-item:last-child{
     margin-right: 0;
 }
 
 .nav-item a{
     text-decoration: none;
     color: #000;
+    display: block;
 }
 
 .nav-item a:hover{
     color: #1abc9c;
 }
 
-.page-name{
+/*Products*/
+
+.section-name{
     text-align: center;
     padding-bottom: 90px;
 }
 
-.page-title{
+.section-title{
     font-size: 48px;
     text-transform: uppercase;
     font-weight: 700;
     padding-bottom: 35px;
+    color: #555252;
+    position: relative;
 }
 
-.page-name hr{
-    width: 160px;
+.section-title::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 170px;
     height: 8px;
-    background: #1abc9c;
+    background-color: #1abc9c;
+    right: 0;
     margin: 0 auto;
-    border: none;
+    display: block;
 }
 
 .products-items{
@@ -87,9 +105,10 @@ main{
     display: inline-block;
     margin-right: 30px;
     padding-bottom: 30px;
+    font-size: 0;
 }
 
-.products-item:nth-child(4), .products-item:nth-child(8){
+.products-item:nth-child(4n+4){
     margin-right: 0;
 }
 
@@ -110,6 +129,8 @@ main{
     width: 200px;
     padding: 10px;
     font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .products-item-price{
@@ -120,9 +141,76 @@ main{
     width: 55px;
     padding: 10px;
     font-size: 18px;
+    font-weight: 700;
 }
 
+.products-item:hover .products-item-name{
+    background: #1abc9c;
+}
 
+.products-item:hover .products-item-price{
+    background: #7fd9c7;
+}
 
+/*News*/
 
+.news-cards{
+    padding-bottom: 80px;
+}
 
+.news-card{
+    display: inline-block;
+    width: 350px;
+    margin: 0 15px;
+    font-size: 0;
+}
+
+.news-card:first-child{
+    margin-left: 26px;
+}
+
+.news-card:last-child{
+    margin-right: 26px;
+}
+
+.news-card-img{
+    width: 100%; 
+    padding-bottom: 15px;
+}
+
+.news-card-title{
+    font-size: 18px;
+    color: #555252;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.news-card-title::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 170px;
+    height: 3px;
+    background-color: #1abc9c;
+    right: 0;
+    display: block;
+    
+}
+
+.news-card-description{
+    font-size: 14px;
+    color: #555252;
+    padding-bottom: 20px;
+}
+
+.news-card-btn{
+    display: inline-block;;
+    font-size: 16px;
+    color: #fff;
+    background: #4ec6ab;
+    padding: 18px 45px;
+    border-radius: 5px;
+    text-decoration: none;
+}
