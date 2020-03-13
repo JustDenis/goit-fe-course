@@ -167,6 +167,7 @@ main{
     display: inline-block;
     margin-right: 30px;
     margin-bottom: 100px;
+    position: relative;
 }
 
 .collections-item:last-child{
@@ -213,6 +214,67 @@ main{
     background: #7fd9c7;
 }
 
+.collections-item-menu{
+    height: 322px;
+    width: 255px;
+    position: absolute;
+    visibility: hidden;
+    border: 10px solid rgba(255, 255, 255, .55);
+    top: 0;
+}
+
+.wrap{
+    width: 235px;
+    height: 302px;
+    background: rgba(0, 0, 0, .55);
+    padding-top: 80px;
+}
+
+.collections-item:hover .collections-item-menu{
+    visibility: visible;
+}
+
+.collections-menu-icons{
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.last-child{
+    margin-right: 0;
+}   
+
+.collections-menu-icons:hover{
+    background: #1abc9c;
+}
+
+.collections-menu-icons img{
+    width: 25px;
+    height: 25px;
+}
+
+.collections-menu-btn{
+    display: block;
+    margin: 0 auto;
+    background: #323232;
+    border: 1px solid #fff;
+    padding: 8px;
+}
+
+.collections-menu-btn:hover{
+    background: #1abc9c;
+    cursor: pointer;
+}
+
+.collections-menu-btn span{
+    color: #fff;
+    text-transform: uppercase;
+    padding-left: 18px;
+    font-size: 14px;
+}
+
 /* Footer */
 
 .footer{
@@ -232,3 +294,5 @@ main{
     text-decoration: none;
     color: #1abc9c;
 }
+
+
