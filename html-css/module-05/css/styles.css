@@ -166,7 +166,6 @@ main{
     width: 255px;
     display: inline-block;
     margin-right: 30px;
-    margin-bottom: 100px;
     position: relative;
 }
 
@@ -234,58 +233,45 @@ main{
     visibility: visible;
 }
 
-.collections-menu-icons{
-    display: inline-block;
-    border: 1px solid #fff;
-    padding: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-.last-child{
-    margin-right: 0;
-}   
-
-.collections-menu-icons:hover{
-    background: #1abc9c;
-}
-
-.collections-menu-icons img{
-    width: 25px;
-    height: 25px;
-}
 
 .collections-menu-icon{
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: transparent;
     width: 50px;
     height: 50px;
     border: 1px solid #fff;
+    margin: 0 10px 10px 0;
 }
+
+.collections-menu-icon:hover{
+    background-color: #1abc9c;
+    border: 1px solid #1abc9c;
+    cursor: pointer;
+}
+
+.last-child{
+    margin-right: 0;
+} 
 
 .heart{
     background-image: url(../img/icons/heart.png);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .arrows{
-    background-image: url(../img/icons/arrows.png.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(../img/icons/arrows.png);
 }
 .clock{
-    background-image: url(../img/icons/clock.png.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(../img/icons/clock.png);
+
 }
 .shop{
-    background-image: url(../img/icons/shop.png.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(../img/icons/shop.png);
 }
 
 .collections-menu-btn{
     display: block;
     margin: 0 auto;
+    width: 170px;
     background: #323232;
     border: 1px solid #fff;
     padding: 8px;
@@ -293,6 +279,7 @@ main{
 
 .collections-menu-btn:hover{
     background: #1abc9c;
+    border: 1px solid #1abc9c;
     cursor: pointer;
 }
 
