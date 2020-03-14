@@ -84,6 +84,10 @@ main{
     font-size: 0;
 }
 
+.position{
+    position: relative;
+}
+
 .main-titles{
     display: inline-block;
     text-align: left;
@@ -98,7 +102,9 @@ main{
     border: none;
     font-size: 50px;
     color: #fff;
-    margin-top: 225px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .slider-btn:hover{
@@ -107,11 +113,11 @@ main{
 }
 
 .btn-l{
-    float: left;
+    left: 30px;
 }
 
 .btn-r{
-    float: right;
+    right: 30px;
 }
 
 .main-title{
@@ -137,23 +143,17 @@ main{
     font-size: 48px;
     text-transform: uppercase;
     font-weight: 700;
-    margin-bottom: 120px;
+    margin-bottom: 90px;
     color: #555252;
-    position: relative;
 }
 
 .collections-title::after{
     content: "";
-    position: absolute;
-    top: 88px;
-    bottom: 0;
-    left: 0;
+    display: block;
+    margin: 30px auto 0 auto;
     width: 170px;
     height: 8px;
     background-color: #1abc9c;
-    right: 0;
-    margin: 0 auto;
-    display: block;
 }
 
 .collections-items{
@@ -253,6 +253,34 @@ main{
 .collections-menu-icons img{
     width: 25px;
     height: 25px;
+}
+
+.collections-menu-icon{
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+}
+
+.heart{
+    background-image: url(../img/icons/heart.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.arrows{
+    background-image: url(../img/icons/arrows.png.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.clock{
+    background-image: url(../img/icons/clock.png.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.shop{
+    background-image: url(../img/icons/shop.png.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .collections-menu-btn{
