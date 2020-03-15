@@ -84,12 +84,17 @@ main{
     font-size: 0;
 }
 
+.position{
+    position: relative;
+    min-height: 600px;
+}
 
 .main-titles{
-    display: inline-block;
+    position: absolute;
     text-align: left; 
-    padding-top: 200px;
-    padding-bottom: 290px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .slider-btn{
