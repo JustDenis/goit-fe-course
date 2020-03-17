@@ -17,6 +17,8 @@ font-family: 'Roboto', sans-serif;
     margin: 0 auto;
 }
 
+/* Menu */
+
 .header{
     font-family: 'Montserrat', sans-serif;
     padding-top: 30px;
@@ -63,12 +65,17 @@ font-family: 'Roboto', sans-serif;
     border-bottom: 3px solid #f38181;
 }
 
+/* Services */
+
 .services{
     padding-bottom: 90px;
 }
 
+/* Titles */
+
 .section-titles{
     text-align: center;
+    padding-bottom: 65px;
 }
 
 .section-subtitle{
@@ -82,7 +89,6 @@ font-family: 'Roboto', sans-serif;
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 700;
-    margin-bottom: 65px;
 }
 
 .section-title::after{
@@ -93,6 +99,15 @@ font-family: 'Roboto', sans-serif;
     width: 60px;
     background: #f38181;
 }
+
+.section-title-description{
+    padding-top: 45px;
+    font-family: 'Roboto', sans-serif;
+    color: #b3b3b3;
+    font-size: 15px;
+}
+
+/* Services */
 
 .services-items{
     display: flex;
@@ -132,5 +147,18 @@ font-family: 'Roboto', sans-serif;
     line-height: 26px;
 }
 
+/* Team */
+
+.team-items{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.team-item-name{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
 
 
