@@ -114,26 +114,89 @@ font-family: 'Roboto', sans-serif;
 
 .services-items{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    
 }
 
 .services-item{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-basis: 340px;
-    margin-bottom: 100px;
+    max-width: 340px;
+    position: relative;
+    padding-left: 60px;
+    padding-bottom: 100px;
 }
 
 .services-item:nth-child(1n+4){
-    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
-.services-item-names{
-    margin-left: 30px;
+/* Icons */
+
+.alarm-icon:before{
+    content: "";
+    background-image: url('../img/ALARM.svg');
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: 3px;
 }
+
+.graph-icon:before{
+    content: "";
+    background-image: url('../img/LINE_GRAPH.svg');
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+.computer-icon:before{
+    content: "";
+    background-image: url('../img/COMPUTER_OK.svg');
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+.book-icon:before{
+    content: "";
+    background-image: url('../img/BOOK.svg');
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+.home-icon:before{
+    content: "";
+    background-image: url('../img/HOME.svg');
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+.image-icon:before{
+    content: "";
+    background-image: url('../img/IMAGE.svg');
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
 
 .services-item-name{
     font-family: 'Montserrat', sans-serif;
@@ -164,6 +227,9 @@ font-family: 'Roboto', sans-serif;
 }
 
 .hover-socilas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     opacity: 0; 
     width: 390px;
@@ -187,6 +253,40 @@ font-family: 'Roboto', sans-serif;
     transition: 200ms linear;
     z-index: 1;
     transform: translate(-10px, -10px);
+}
+
+.hover-socilas-item{
+    height: 55px;
+    width: 55px;
+    margin-right: 1px;
+    background-color: #fce38a;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hover-socilas-item:hover{
+    background-color: #95e1d3;
+    transition: 200ms linear;
+}
+
+.hover-socilas-item:last-child{
+    margin-right: 0;
+}
+
+.facebook-icon{
+    background-image: url('../img/socials/facebook.svg');
+}
+
+.twitter-icon{
+    background-image: url('../img/socials/twitter.svg');
+}
+
+.pinterest-icon{
+    background-image: url('../img/socials/pinterest.svg');
+}
+
+.inst-icon{
+    background-image: url('../img/socials/instagram.svg');
 }
 
 .team-item-img{
