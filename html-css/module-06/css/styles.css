@@ -3,6 +3,8 @@
 font-family: 'Kaushan Script', cursive;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif;
+1st: #fce38a
+2nd: #f38181
 */
 
 *{
@@ -63,6 +65,7 @@ font-family: 'Roboto', sans-serif;
 .nav-item a:hover{
     color: #f38181;
     border-bottom: 3px solid #f38181;
+    transition: 200ms linear;
 }
 
 /* Services */
@@ -153,12 +156,123 @@ font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: space-between;
     text-align: center;
+    padding-bottom: 85px;
+}
+
+.team-item{
+    position: relative;
+}
+
+.team-item:hover .team-item-img{
+    border-bottom: 10px solid #95e1d3;
+    border-right: 10px solid #95e1d3;
+    transition: 200ms linear;
+}
+
+.hover-socilas{
+    position: absolute;
+    display: none;  
+    width: 390px;
+    height: 480px;
+    bottom: 85px;
+    right: 10px;
+    background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+}
+
+.team-item:hover .hover-socilas{
+    display: block;
+    transition: 200ms linear;
+}
+
+.team-item-img{
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid transparent;
+    margin-bottom: 20px;
 }
 
 .team-item-name{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 500;
+    padding-bottom: 15px;
 }
 
+.team-item-proffesion{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    color: #b3b3b3;
+}
 
+/* Footer */
+
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    border-top: 1px solid #e5e5e5;
+
+}
+
+.footer-info-autor{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.footer-info-autor::before{
+    content: "\00A9";
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.footer-info-autor a{
+    color: #f38181;
+    text-decoration: none;
+}
+
+.footer-info-autor a:hover{
+    color: #eb2d2d;
+    transition: 200ms linear;
+}
+
+.footer-info-form{
+    font-size: 0;
+}
+
+.footer-info-input{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    height: 40px;
+    padding: 0 13px;
+    border: 1px solid #e7e7e7;
+    border-right: 1px solid #95e1d3;
+    outline: none;
+}
+
+.footer-info-input:hover, .footer-info-input:focus{
+    border: 1px solid #95e1d3;
+    transition: 200ms;
+}
+
+.footer-info-btn{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    background: #95e1d3;
+    color: #ffffff;
+    height: 41px;
+    border: none;
+    padding: 0 30px;
+    /* border: 1px solid #95e1d3; */
+}
+
+.footer-info-btn:hover{
+    background:#38c7ad;
+    transition: 200ms linear;
+    cursor: pointer;
+}
