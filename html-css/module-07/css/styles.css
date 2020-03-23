@@ -1,0 +1,214 @@
+/* Settings */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.section{
+    padding: 115px 0 115px 0;
+    text-align: center;
+}
+
+/* Header */
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 45px;
+}
+
+.menu-items{
+    display: flex;
+    justify-content: space-between;
+    width: 485px;
+}
+
+.logo{
+    font-family: 'Pacifico';
+    font-style: italic;
+    font-size: 26px;
+    color: #fed136;
+    text-decoration: none;
+}
+
+.menu-item a{
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu-item a:hover{
+    color: #fed136;
+    transition: 200ms linear;
+}
+
+/* Services */
+
+.section-title{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+
+.section-title span{
+    display: block;
+    font-family: 'DroidSerif';
+    font-size: 16px;
+    font-style: italic;
+    color: #777777;
+    margin-top: 25px;
+    text-transform: none;
+}
+
+.services-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-item{
+    padding-top: 100px;
+    position: relative;
+}
+
+.services-item-title{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.services-item-description{
+    font-family: 'RobotoSlab', sans-serif;
+    font-size: 14px;
+    color: #777777;
+    line-height: 18px;
+}
+
+.icon-busket::before{
+    content: "";
+    width: 73px;
+    height: 73px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('../img/Icon-Basket.png');
+    background-repeat: no-repeat;
+}
+
+.icon-laptop::before{
+    content: "";
+    width: 73px;
+    height: 73px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('../img/Icon-Laptop.png');
+    background-repeat: no-repeat;
+}
+
+.icon-security::before{
+    content: "";
+    width: 73px;
+    height: 73px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('../img/Icon-Locked.png');
+    background-repeat: no-repeat;
+}
+
+/* Form */
+
+.form-bg{
+    background: url('../img/form-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-wite{
+    color: #fff;
+}
+
+.form-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-inputs, .section-message{
+    width: 455px;
+}
+
+.form-input{
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 20px 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.form-input::placeholder{
+    font-size: 14px;
+    font-weight: 700;
+    color: #bbbbbb;
+    text-transform: uppercase;
+}
+
+.form-input:valid, .form-message:valid{
+    outline-color: green;
+    outline-width: 10px;
+}
+
+.form-input:invalid, .form-message:invalid{
+    outline-color: red;
+    outline-width: 10px;
+}
+
+.form-message{
+    width: 100%;
+    height: 232px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 20px 10px;
+}
+
+.form-message::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #bbbbbb;
+    text-transform: uppercase;
+}
+
+.form-btn{
+    padding: 20px 25px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #fed136;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-btn:hover{
+    background: #e4af01;
+    transition: 20ms linear;
+    cursor: pointer;
+}
