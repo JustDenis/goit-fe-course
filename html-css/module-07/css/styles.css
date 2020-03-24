@@ -210,6 +210,6 @@ body{
 
 .form-btn:hover{
     background: #e4af01;
-    transition: 20ms linear;
+    transition: 200ms linear;
     cursor: pointer;
 }
