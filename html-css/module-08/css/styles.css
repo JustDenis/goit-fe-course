@@ -35,16 +35,16 @@ body{
     margin-bottom: 115px;
 }
 
-.menu-item{
+.menu-item-log, .menu-item-sign{
     display: inline-block;
     margin-right: 20px;
 }
 
-.menu-item:last-child{
+.menu-item-sign{
     margin-right: 0;
 }
 
-.menu-item a{
+.menu-item-log a, .menu-item-sign a{
     display: block;
     font-size: 14px;
     font-weight: 700;
@@ -53,18 +53,21 @@ body{
     transition: 200ms linear;
 }
 
-.menu-item a:hover, .menu-item a:focus{
+.menu-item-log a:hover, .menu-item-log a:focus, .menu-item-sign a:hover, .menu-item-sign a:focus{
     color: #ff6669;
+    border-color: #ff6669;
     transition: 200ms linear;
 }
 
-.rounded{
+.menu-item-sign a{
     padding: 10px 15px;
     border: 2px solid #fff;
     border-radius: 20px;
 }
 
 .logo{
+    display: block;
+    text-decoration: none;
     font-size: 20px;
     color: #fff;
     font-weight: 700;
@@ -284,8 +287,37 @@ body{
         max-width: 50%;
     }
 
+    .person1::after, .person2::after, .person3::after, .person4::after{
+        right: 100px;
+    }
+
     .btn-more{
         width: 190px;
         margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 942px){
+    .container{
+        width: 942px;
+        padding: 0;
+    }
+
+    .header{
+        background: url('../img/header-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .partner-items{
+        flex-wrap: nowrap;
+    }
+
+    .partner-item{
+        max-width: 20%;
+    }
+
+    .person1::after, .person2::after, .person3::after, .person4::after{
+        right: 35px;
     }
 }
