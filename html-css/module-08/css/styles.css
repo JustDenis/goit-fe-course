@@ -130,12 +130,16 @@ body{
 }
 
 .partner-item{
-    padding-top: 145px;
+    position: relative;
     margin-bottom: 20px;
 }
 
 .partner-item:last-child{
     margin-bottom: 0;
+}
+
+.partner-img{
+    margin-bottom: 20px;
 }
 
 .partner-title{
@@ -151,13 +155,6 @@ body{
     color: #7a7a7a;
 }
 
-.person1{
-    position: relative;
-    background: url('../img/persons/person1.png');
-    background-repeat: no-repeat;
-    background-position: center 0;
-}
-
 .person1::after{
     content: "";
     background: url('../img/icons/tv.svg');
@@ -166,13 +163,6 @@ body{
     position: absolute;
     top: 80px;
     right: 90px;
-}
-
-.person2{
-    position: relative;
-    background: url('../img/persons/person2.png');
-    background-repeat: no-repeat;
-    background-position: center 0;
 }
 
 .person2::after{
@@ -185,13 +175,6 @@ body{
     right: 90px;
 }
 
-.person3{
-    position: relative;
-    background: url('../img/persons/person3.png');
-    background-repeat: no-repeat;
-    background-position: center 0;
-}
-
 .person3::after{
     content: "";
     background: url('../img/icons/coffe.svg');
@@ -200,13 +183,6 @@ body{
     position: absolute;
     top: 80px;
     right: 90px;
-}
-
-.person4{
-    position: relative;
-    background: url('../img/persons/person4.png');
-    background-repeat: no-repeat;
-    background-position: center 0;
 }
 
 .person4::after{
@@ -242,8 +218,8 @@ body{
 
 @media screen and (min-width: 768px){
     .container{
-        width: 768px;
-        padding: 0 50px;
+        width: 748px;
+        padding: 0 40px;
     }
 
     .header{
@@ -284,7 +260,7 @@ body{
     }
 
     .partner-item{
-        max-width: 50%;
+        width: 50%;
     }
 
     .person1::after, .person2::after, .person3::after, .person4::after{
@@ -299,7 +275,7 @@ body{
 
 @media screen and (min-width: 942px){
     .container{
-        width: 942px;
+        width: 922px;
         padding: 0;
     }
 
