@@ -101,17 +101,20 @@ body{
     padding: 70px 0 60px 0;
 }
 
-.partners{
-    text-align: center;
-}
-
 .section-title{
+    margin: 0 auto;
+    text-align: center;
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
+.padding{
+    padding-right: 0;
+}
+
 .partner-items{
+    text-align: center;
     margin-bottom: 30px;
 }
 
