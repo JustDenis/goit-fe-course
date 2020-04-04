@@ -46,12 +46,14 @@ html{
     display: flex;
 }
 
-.nav-list__item{
+.nav-list__item, 
+.nav-list__icon{
     list-style-type: none;
     margin-right: 55px;
 }
 
-.nav-list__item:last-child{
+.nav-list__item:last-child,
+.nav-list__icon:last-child{
     margin-right: 0;
 }
 
@@ -72,15 +74,21 @@ html{
     transition: 200ms linear;
 }
 
-.nav-list__icon{
+
+.nav-list__icon-link{
     display: block;
+}
+
+.nav-list__icon--cart,
+.nav-list__icon--glass{
     height: 20px;
     width: 20px;
     fill: #fff;
-    transition: 200ms linear;
-}
+    transition: 200ms linear
+ }
 
-.nav-list__icon:hover{
+ .nav-list__icon--cart:hover,
+.nav-list__icon--glass:hover{
     fill: #fce38a;
     transition: 200ms linear;
 }
