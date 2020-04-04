@@ -195,27 +195,27 @@ body{
 }
 
 .list-item__icon--clock::before{
-    background-image: url('../img/icons-sprite.svg#icon-clock');
+    background: url('../img/icons-sprite.svg#icon-clock');
 }
 
 .list-item__icon--graph::before{
-    background-image: url('../img/icons-sprite.svg#icon-graph');
+    background: url('../img/icons-sprite.svg#icon-graph');
 }
 
 .list-item__icon--computer::before{
-    background-image: url('../img/icons-sprite.svg#icon-computer');
+    background: url('../img/icons-sprite.svg#icon-computer');
 }
 
 .list-item__icon--book::before{
-    background-image: url('../img/icons-sprite.svg#icon-book');
+    background: url('../img/icons-sprite.svg#icon-book');
 }
 
 .list-item__icon--home::before{
-    background-image: url('../img/icons-sprite.svg#icon-home');
+    background: url('../img/icons-sprite.svg#icon-home');
 }
 
 .list-item__icon--frame::before{
-    background-image: url('../img/icons-sprite.svg#icon-frame');
+    background: url('../img/icons-sprite.svg#icon-frame');
 }
 
 .list-item__name{
