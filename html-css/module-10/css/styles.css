@@ -275,6 +275,25 @@ body{
     color: #b3b3b3;
 }
 
+.persons-list__hover{
+    position: absolute;
+    width: 384px;
+    height: 474.95px;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+    z-index: 1;
+    transition: 200ms linear;
+}
+
+.persons-list:hover .persons-list__hover{
+    top: -10px;
+    left: -10px;
+    opacity: 1;
+    transition: 200ms linear;
+}
+
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx){
     .header{
