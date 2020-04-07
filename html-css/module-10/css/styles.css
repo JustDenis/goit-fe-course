@@ -99,7 +99,7 @@ body{
     text-align: center;
 }
 
-.header-title{
+.header__title{
     color: #fff;
     font-size: 15rem;
     font-weight: 700;
@@ -107,7 +107,7 @@ body{
     margin-bottom: 12rem;
 }
 
-.header-title__italic{
+.header__title--italic{
     font-family: 'Kaushan Script', cursive;
     display: block;
     font-size: 7.2rem;
@@ -116,7 +116,7 @@ body{
     margin-bottom: 6.5rem;
 }
 
-.header-link{
+.header__link{
     padding: 1.2rem 3rem;
     font-size: 1.4rem;
     font-weight: 700;
@@ -137,7 +137,7 @@ body{
     padding: 4.5rem 0;
 }
 
-.section-title{
+.section__title{
     text-align: center;
     font-size: 3rem;
     font-weight: 700;
@@ -145,7 +145,7 @@ body{
     margin-bottom: 4.5rem;
 }
 
-.section-title::after{
+.section__title::after{
     content: "";
     display: block;
     margin: 4rem auto 0 auto;
@@ -154,7 +154,7 @@ body{
     background: #f38181;
 }
 
-.section-title__italic{
+.section__title--italic{
     display: block;
     font-family: 'Kaushan Script', cursive;
     font-size: 2.4rem;
@@ -162,25 +162,25 @@ body{
     text-transform: none;
 }
 
-.section-list{
+.services__list, .persons__list{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.list-item{
+.services__item{
     position: relative;
     max-width: 33.333%;
     padding-left: 6rem;
     padding-bottom: 10rem;
 }
 
-.list-item:nth-child(1n+4){
+.services__item:nth-child(1n+4){
     padding-bottom: 0;
 }
 
 
-.list-item__icon{
+.services__icon{
     content: "";
     height: 35px;
     width: 35px;
@@ -189,14 +189,14 @@ body{
     top: 3px;
 }
 
-.list-item__name{
+.services__name{
     font-size: 1.4rem;
     text-transform: uppercase;
     font-weight: 500;
     margin-bottom: 2rem;
 }
 
-.list-item__text{
+.services__text{
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
@@ -204,7 +204,7 @@ body{
     line-height: 2.6rem;
 }
 
-.section-subtitle{
+.section__subtitle{
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: #b3b3b3;
@@ -212,32 +212,32 @@ body{
     padding-bottom: 95px;
 }
 
-.persons-list{
+.persons__item{
     max-width: 32%;
     text-align: center;
     position: relative;
 }
 
-.persons-list__img{
+.persons__img{
     width: 100%;
     display: block;
     margin-bottom: 20px;
     transition: 200ms linear;
 }
 
-.persons-list:hover .persons-list__img{
+.persons__item:hover .persons__img{
     box-shadow: 10px 10px 0px 0px #95e1d3;
     transform: translate(-10px, -10px);
     transition: 200ms linear;
 }
 
-.persons-list__name{
+.persons__name{
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.persons-list__subname{
+.persons__subname{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-style: italic;
@@ -245,7 +245,7 @@ body{
     color: #b3b3b3;
 }
 
-.persons-list__hover{
+.persons__hover{
     position: absolute;
     width: 384px;
     height: 474.95px;
@@ -257,7 +257,7 @@ body{
     transition: 200ms linear;
 }
 
-.persons-list:hover .persons-list__hover{
+.persons__item:hover .persons__hover{
     transform: translate(-10px, -10px);
     opacity: 1;
     transition: 200ms linear;
